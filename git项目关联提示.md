@@ -14,4 +14,3 @@
     git remote add origin https://github.com/lyle8341/swagger.git
     git push -u origin master
 
-feature branch modify one
