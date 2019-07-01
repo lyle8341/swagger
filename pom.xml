@@ -64,6 +64,32 @@
     </dependency>
   </dependencies>
 
+  <repositories>
+    <repository>
+      <id>alimaven</id>
+      <name>Maven Aliyun Mirror</name>
+      <url>http://maven.aliyun.com/nexus/content/repositories/central/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+    <repository>
+      <id>yonyouCloud</id>
+      <name>yonyouCloud</name>
+      <url>http://maven.yonyoucloud.com/nexus/content/repositories/releases/</url>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+      <snapshots>
+        <enabled>false</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
+
+
   <build>
     <plugins>
       <plugin>
