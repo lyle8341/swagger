@@ -1,5 +1,6 @@
 package com.example.demo.controller;
 
+import com.example.demo.model.WebResult;
 import io.swagger.annotations.Api;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -20,4 +21,12 @@ public class LogController {
     return "index2";
   }
 
+  @GetMapping("/lyle")
+  public WebResult<?> testResponseModel(){
+    WebResult<String> result = new WebResult<>();
+    result.setError_code("000");
+    result.setError_message("test");
+    result.setData("lyle");
+    return result;
+  }
 }

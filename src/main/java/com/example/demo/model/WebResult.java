@@ -16,11 +16,13 @@ import io.swagger.annotations.ApiModel;
 //ApiModel的value默认是类名
 //ApiModel只在response区域和Models区域有说明作用
 @ApiModel(value = "类名WebResult", description = "用于判断用户是否存在")
-public class WebResult {
+public class WebResult<T> {
 
   private String error_code;
 
   private String error_message;
+
+  private T data;
 
   public String getError_code() {
     return error_code;
@@ -36,5 +38,13 @@ public class WebResult {
 
   public void setError_message(String error_message) {
     this.error_message = error_message;
+  }
+
+  public T getData() {
+    return data;
+  }
+
+  public void setData(T data) {
+    this.data = data;
   }
 }
